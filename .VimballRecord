@@ -1,0 +1,3 @@
+cabal.vba: call delete('/home/kashif/.vim/ftdetect/cabal.vim')|call delete('/home/kashif/.vim/syntax/cabal.vim')
+hlint.vba: call delete('/home/kashif/.vim/compiler/hlint.vim')
+rainbow_parenthsis-4.0.vba: call delete('/home/kashif/.vim/autoload/rainbow_parenthsis.vim')|call delete('/home/kashif/.vim/doc/rainbow_parenthsis.txt')|call delete('/home/kashif/.vim/plugin/rainbow_parenthsis.vim')|call delete('/home/kashif/.vim/rainbow_parenthsis_options.vim')
