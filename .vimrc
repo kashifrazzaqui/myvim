@@ -64,7 +64,7 @@ map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 map <leader>h :tabprevious<cr>
 map <leader>l :tabnext<cr>
-map <leader>c :set cursorline! cursorcolumn!<cr>
+map <leader>c :set cursorline! <cr>
 map <leader>f :Vexplore<cr>
 
 map <leader>n :nohl<cr>
@@ -76,9 +76,6 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 " When you press gv you vimgrep after the selected text
 vnoremap <silent> gv :call VisualSearch('gv')<CR>
 map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
-
-
-
 
 set encoding=utf8
 try
