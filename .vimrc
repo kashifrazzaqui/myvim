@@ -8,12 +8,12 @@ set wrap
 set linebreak
 set nolist
 set history=300
-set smartindent
+"set smartindent
 set tabstop=4 "set tab character to 4 characters
 set expandtab "turn tabs into whitespace
 set shiftwidth=4 "indent width for auto indent
-set smarttab
-set ai "auto-indent
+set smarttab " reads spaces as tabs when backspacing, hence moves four spaces at a time
+"set ai "auto-indent
 set ruler
 
 " Set to auto read when a file is changed from the outside
@@ -25,6 +25,8 @@ filetype plugin on
 "Shortcut to auto indent entire file
 nmap <F11> 1G=G
 imap <F11> <ESC>1G=Ga
+nnoremap <F12> :GundoToggle<CR>
+
 
 "Turn on incremental search with ignore case (except explicit caps)
 set incsearch
@@ -48,8 +50,8 @@ let g:mapleader = ","
 map <leader>e :e! ~/.vimrc<cr>
 map <leader>v :e! ~/.vim/colors/kashif.vim<cr>
 map <leader>bash :e! ~/.bashrc<cr>
-map <leader>todo :e! ~/Documents/todo<cr>
-map <leader>scr :e! ~/Dropbox/notesy/scratch.txt<cr>
+map <leader>todo :e! ~/Documents/Personal/todo<cr>
+map <leader>scr :e! ~/Documents/Personal/scratch<cr>
 map <leader>y "+y
 map <leader>p "+gP
 
@@ -97,7 +99,7 @@ colorscheme kashif
 syntax enable
 
 "Enable indent folding
-"set foldenable
+set foldenable
 "set fdm=indent
 
 "Set space to toggle a fold

@@ -1,7 +1,7 @@
 "For graphical stuff
 colorscheme kashif
 "Set the font and size
-set guifont="Monospace 11"
+set guifont="Liberation Mono 11"
 
 "Hide toolbar
 set guioptions-=T
